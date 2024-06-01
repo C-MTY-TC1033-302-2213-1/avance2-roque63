@@ -2,7 +2,7 @@
   "tests": [
     {
      "name": "Test 1 - datos de entrada: 1 1 100",
-     "setup": "g++ -g -o main main.cpp Video.cpp Serie.cpp Pelicula.cpp Episodio.cpp Poliformismo.cpp",
+     "setup": "g++ -g -o main main.cpp Video.cpp Serie.cpp Pelicula.cpp Episodio.cpp Polimorfismo.cpp",
      "run": "./main",
      "input": "1 1 100",
      "output":  "100 P1 100 A 100.000000 1\n101 P2 200 A 100.000000 2\nTotal = 2\n",
@@ -12,7 +12,7 @@
    },
    {
      "name": "Test 2 - datos de entrada: 1 2 C",
-     "setup": "g++ -g -o main main.cpp Video.cpp Serie.cpp Pelicula.cpp Episodio.cpp Poliformismo.cpp",
+     "setup": "g++ -g -o main main.cpp Video.cpp Serie.cpp Pelicula.cpp Episodio.cpp Polimorfismo.cpp",
      "run": "./main",
      "input": "1 2 C",
      "output": "102 P3 100 C 90.000000 3\nTotal = 1\n",
@@ -22,7 +22,7 @@
    },
    {
      "name": "Test 3 - datos de entrada: 1 3",
-     "setup": "g++ -g -o main main.cpp Video.cpp Serie.cpp Pelicula.cpp Episodio.cpp Poliformismo.cpp",
+     "setup": "g++ -g -o main main.cpp Video.cpp Serie.cpp Pelicula.cpp Episodio.cpp Polimorfismo.cpp",
      "run": "./main",
      "input": "1 3",
      "output": "100 P1 100 A 100.000000 1\n101 P2 200 A 100.000000 2\n102 P3 100 C 90.000000 3\nPeliculas = 3\nSeries = 0\n",
@@ -32,7 +32,7 @@
    },
  {
      "name": "Test 4 -datos de entrada: 1 4",
-     "setup": "g++ -g -o main main.cpp Video.cpp Serie.cpp Pelicula.cpp Episodio.cpp Poliformismo.cpp",
+     "setup": "g++ -g -o main main.cpp Video.cpp Serie.cpp Pelicula.cpp Episodio.cpp Polimorfismo.cpp",
      "run": "./main",
      "input": "1 4",
      "output": "100 P1 100 A 100.000000 1\n101 P2 200 A 100.000000 2\n102 P3 100 C 90.000000 3\nTotal Peliculas = 3\n",
@@ -42,7 +42,7 @@
    },
  {
      "name": "Test 5 -datos de entrada: 1 5",
-     "setup": "g++ -g -o main main.cpp Video.cpp Serie.cpp Pelicula.cpp Episodio.cpp Poliformismo.cpp",
+     "setup": "g++ -g -o main main.cpp Video.cpp Serie.cpp Pelicula.cpp Episodio.cpp Polimorfismo.cpp",
      "run": "./main",
      "input": "1 5",
      "output": "No series\n",
@@ -52,7 +52,7 @@
    },
  {
      "name": "Test 6 -datos de entrada: 2 1 90",
-     "setup": "g++ -g -o main main.cpp Video.cpp Serie.cpp Pelicula.cpp Episodio.cpp Poliformismo.cpp",
+     "setup": "g++ -g -o main main.cpp Video.cpp Serie.cpp Pelicula.cpp Episodio.cpp Polimorfismo.cpp",
      "run": "./main",
      "input": "2 1 90",
      "output": "501 S2 2 C 90.000000 1\nE1 2 90\n\n101 P2 178 D 90.000000 2\nTotal = 2\n",
@@ -62,7 +62,7 @@
    },
  {
      "name": "Test 7 -datos de entrada: 2 2 D",
-     "setup": "g++ -g -o main main.cpp Video.cpp Serie.cpp Pelicula.cpp Episodio.cpp Poliformismo.cpp",
+     "setup": "g++ -g -o main main.cpp Video.cpp Serie.cpp Pelicula.cpp Episodio.cpp Polimorfismo.cpp",
      "run": "./main",
      "input": "4 4 10",
      "output":"101 P2 178 D 90.000000 2\nTotal = 1\n",
@@ -72,7 +72,7 @@
    },
  {
      "name": "Test 8 -datos de entrada: 2 2 A",
-     "setup": "g++ -g -o main main.cpp Video.cpp Serie.cpp Pelicula.cpp Episodio.cpp Poliformismo.cpp",
+     "setup": "g++ -g -o main main.cpp Video.cpp Serie.cpp Pelicula.cpp Episodio.cpp Polimorfismo.cpp",
      "run": "./main",
      "input": "2 2 A",
      "output": "100 P1 182 A 100.000000 1\n103 P7 182 A 100.000000 1\nTotal = 2\n",
@@ -82,7 +82,7 @@
    },
    {
     "name": "Test 9 -datos de entrada: 2 3",
-    "setup": "g++ -g -o main main.cpp Video.cpp Serie.cpp Pelicula.cpp Episodio.cpp Poliformismo.cpp",
+    "setup": "g++ -g -o main main.cpp Video.cpp Serie.cpp Pelicula.cpp Episodio.cpp Polimorfismo.cpp",
     "run": "./main",
     "input": "2 3",
     "output": "500 S1 5 C 100.000000 5\nE1 1 100\nE2 1 100\nE3 1 100\nE4 1 100\nE5 1 100\n\n501 S2 2 C 90.000000 1\nE1 2 90\n\n100 P1 182 A 100.000000 1\n101 P2 178 D 90.000000 2\n103 P7 182 A 100.000000 1\nPeliculas = 3\nSeries = 2\n",
@@ -93,7 +93,7 @@
 
   {
     "name": "Test 10 -datos de entrada: 2 4",
-    "setup": "g++ -g -o main main.cpp Video.cpp Serie.cpp Pelicula.cpp Episodio.cpp Poliformismo.cpp",
+    "setup": "g++ -g -o main main.cpp Video.cpp Serie.cpp Pelicula.cpp Episodio.cpp Polimorfismo.cpp",
     "run": "./main",
     "input": "2 4",
     "output": "100 P1 182 A 100.000000 1\n101 P2 178 D 90.000000 2\n103 P7 182 A 100.000000 1\nTotal Peliculas = 3\n",
@@ -104,7 +104,7 @@
 
   {
     "name": "Test 11 -datos de entrada: 2 5",
-    "setup": "g++ -g -o main main.cpp Video.cpp Serie.cpp Pelicula.cpp Episodio.cpp Poliformismo.cpp",
+    "setup": "g++ -g -o main main.cpp Video.cpp Serie.cpp Pelicula.cpp Episodio.cpp Polimorfismo.cpp",
     "run": "./main",
     "input": "2 5",
     "output": "500 S1 5 C 100.000000 5\nE1 1 100\nE2 1 100\nE3 1 100\nE4 1 100\nE5 1 100\n\n501 S2 2 C 90.000000 1\nE1 2 90\n\nTotal Series = 2\n",
