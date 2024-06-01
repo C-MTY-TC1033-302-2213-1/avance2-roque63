@@ -1,17 +1,35 @@
+//
 //  main.cpp
-//  Avance2 - Proyecto
+//  Tarea3 y Actividad Presencial 23/05/24
 //
-//  Created by Ma. Guadalupe Roque Díaz de León on 30/05/23.
+//  Created by Ma. Guadalupe Roque Díaz de León on 23/05/24.
 //
+
+// Clases Base - Video - con método virtual str() para Poliformismo
+// Clases Derivadas - Pelicula, Serie
+// Clase usada para composición - Episodio
+// Arreglo de apuntadores
+
+
+/*
+Nombre:
+Matricula:
+Carrera:
+Fecha: 
+- ¿Qué aprendí en el desarrollo de la clase Polimorfismo?
+*/
 
 #include <iostream>
 #include "Video.h"
-#include "Poliformismo.h"
 #include "Episodio.h"
 #include "Pelicula.h"
 #include "Serie.h"
+#include "Polimorfismo.h"
 
-void poliformismo(Poliformismo inventario){
+#include <string>
+using namespace std;
+
+void polimorfismo(Polimorfismo inventario){
   // Declaración de variables locales
  int opcion, oscares, cantidadEpisodios;
  double calificacion;
@@ -35,13 +53,11 @@ void poliformismo(Poliformismo inventario){
          break;
 
      case 4:
-         cin >> oscares;
-         inventario.reportePeliculas(oscares);
+         inventario.reportePeliculas();
          break;
 
      case 5:
-         cin >> cantidadEpisodios;
-         inventario.reporteSeries(cantidadEpisodios);
+         inventario.reporteSeries();
          break;
 
     default:
@@ -51,56 +67,27 @@ void poliformismo(Poliformismo inventario){
 }
 
 int main() {
-  // Declaracion de objetos inicializados con Constructores default
-  Video viernes;
-  Pelicula pel;
-  Serie serie2;
-  Poliformismo neflix;
+    // Declaracion de objetos
+    Polimorfismo neflix;
+    int opcion;
 
-  // Declaracion de objetos inicializados con Constructores con parámetros
-  Episodio episodio_viernes{"Tigres_Rayados", 90, 100};
-  Episodio episodio_sabado{"Tigres_Campeones", 90, 100};
-  Pelicula peli{"0001", "Tigres_Chivas", 600, "Deportes", 100.0, 20};
-  Serie serie1{"0002", "POO", 500, "Programacion", 100};
+    // leer la opcion
+    cin >> opcion;
 
-  int opcion;
+    switch (opcion){
+        case 1:
+           neflix.leerArchivo("Inventario1.csv");
+           polimorfismo(neflix);
+           break;
 
-  // Añadir episodios a la serie1
-  serie1.agregaEpisodio(episodio_viernes);
-  serie1.agregaEpisodio(episodio_sabado);
-
-  // leer la opcion
-  cin >> opcion;
-
-  switch (opcion){
-      case 1:
-          cout << serie1.getGenero() << endl;
-          cout << serie1.getDuracion() << endl;
-          cout << serie1.getCalificacion() << endl;
-          cout << serie1.getEpisodio(0).str() << endl;
-          cout << serie1.getEpisodio(1).str() << endl;
-          cout << serie1.str() << endl;
+        case 2:
+          neflix.leerArchivo("Inventario2.csv");
+          polimorfismo(neflix);
           break;
 
-      case 2:
-        cout << "CDV=" << viernes.str() << endl;
-        cout << "CDP=" << pel.str() << endl;
-        cout << "CDS=" << serie2.str() << endl;
-          break;
+    default:
+          cout << "incorrecta" ;
+    }
 
-      case 3:
-         neflix.leerArchivo("Inventario1.csv");
-         poliformismo(neflix);
-         break;
-
-      case 4:
-        neflix.leerArchivo("Inventario2.csv");
-        poliformismo(neflix);
-        break;
-
-      default:
-        cout << "incorrecta" ;
-  }
-
-return 0;
+    return 0;
 }
